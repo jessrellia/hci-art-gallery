@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Fonts/font-awesome/css/all.css">
+</head>
+<body>
+    <div class="navigation">
+        <div id=logo><img src="logo.png" alt="Logo"></div>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+        <nav>
+            <ul class="toggler">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li class="selected-tab">Auction</li>
+                <li><a href="../Registration/registration.html">Registration</a></li>
+                <li><a href="../About/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="header">
+        <img src="assets/header.jpg" alt="">
+    </div>
+    
+    <div class="view-content">
+        <h2>ONGOING AUCTION</h2>
+        <hr>
+        <div class="content">
+            <div class="content-item">
+                <img src="assets/the-life-line1.jpg" alt="The Life Line">
+                <p><strong>The Life Line</strong></p>
+                <p id="author">by Winslow Homer</p><br>
+                <p>Start bid: $100</p>
+                <p class="price">Current bid: $<span>500</span></p>
+                <p id="your-bid">Your bid: <span>-</span></p>
+                <p class="reminder">Auction ends in: 2d 11h</p><br>
+                <button class="bid-button">Make a bid</button>
+            </div>
+            <div class="content-item">
+                <img src="assets/mahana-no-atua.jpg" alt="Mahana No Atua">
+                <p><strong>Mahana No Atua</strong></p>
+                <p id="author">by Paul Gauguin</p><br>
+                <p>Start bid: $2500</p>
+                <p class="price">Current bid: $<span>4000</span></p>
+                <p id="your-bid">Your bid: <span>-</span></p>
+                <p class="reminder">Auction ends in: 7d 5h</p><br>
+                <button class="bid-button">Make a bid</button>
+            </div>
+            <div class="content-item">
+                <img src="assets/confrontation.jpg" alt="Mahana No Atua">
+                <p><strong>Confrontation</strong></p>
+                <p id="author">by Grace Weaver</p><br>
+                <p>Start bid: $5000</p>
+                <p class="price">Current bid: $<span>6000</span></p>
+                <p id="your-bid">Your bid: <span>-</span></p>
+                <p class="reminder">Auction ends in: 12d 1h</p><br>
+                <button class="bid-button">Make a bid</button>
+            </div>
+            <div class="content-item">
+                <img src="assets/BYR.jpg" alt="Blue, Yellow, Red">
+                <p><strong>Blue, Yellow, Red</strong></p>
+                <p id="author">by Ellsworth Kelly</p><br>
+                <p>Start bid: $5750</p>
+                <p class="price">Current bid: $<span>6300</span></p>
+                <p id="your-bid">Your bid: <span>-</span></p>
+                <p class="reminder">Auction ends in: 9d 3h</p><br>
+                <button class="bid-button">Make a bid</button>
+            </div>
+        </div>
+        <br><br><br><br>
+        <h2>ONCOMING AUCTION</h2>
+        <hr>
+        <div class="content">
+            <div class="content-item">
+                <img src="assets/quench.jpg" alt="Quench">
+                <p><strong>Quench</strong></p>
+                <p id="author">by Amber Lia-Kloppel</p><br>
+                <p>Start bid: $2200</p>
+                <p>Start date: 13 October 2021</p><br>
+                <button class="not-bid-button">Not started</button>
+            </div>
+            <div class="content-item">
+                <img src="assets/chrystal.jpg" alt="Chrystal">
+                <p><strong>Chrystal</strong></p>
+                <p id="author">by George Dawnay</p><br>
+                <p>Start bid: $7800</p>
+                <p>Start date: 10 February 2022</p><br>
+                <button class="not-bid-button">Not started</button>
+            </div>
+            <div class="content-item">
+                <img src="assets/mage-flame.jpg" alt="The Mage’s Flame">
+                <p><strong>The Mage’s Flame</strong></p>
+                <p id="author">by David Cheifetz</p><br>
+                <p>Start bid: $8000</p>
+                <p>Start date: 28 June 2023</p><br>
+                <button class="not-bid-button">Not started</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"><p>Fancy Art 2020. All Contents are Right Reserved</p></div>
+</body>
+<script src="auction.js"></script>
+</html>

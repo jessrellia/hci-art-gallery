@@ -1,0 +1,232 @@
+@font-face {
+    font-family: Geo Sans;
+    src: url(../Fonts/geosans/GeosansLight.ttf);
+}
+@font-face {
+    font-family: Barrington;
+    src: url(../Fonts/barrington/Barrington.ttf);
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../Fonts/raleway/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Myriad-Pro;
+    src: url(../Fonts/myriad-pro/MYRIADPRO-REGULAR.OTF);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#logo img{
+    position: absolute;
+    width: 4.5em;
+    margin-left: 10px;
+}
+
+.navigation{
+    background-color: #eaf0ef;
+}
+
+.selected-tab{
+    background-color: #303434;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+}
+
+nav{
+    background-color: #eaf0ef;
+    width: 100%;
+    font-family: Myriad Pro;
+    overflow: auto;
+}
+
+.toggler{
+    margin-left: 100px;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+}
+
+li a:hover{
+    color: white;
+    background-color: #7cd5d5;
+}
+
+.footer{
+    width: 100%;
+    background-color: #303434;
+    font-size: 16px;
+    font-family: Raleway-Light;
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    padding: 20px 25px;
+}
+
+.icon{
+    display: none;
+}
+
+form > label{
+    font-size: 18pt;
+}
+
+@media screen and (max-width: 850px){
+
+    .toggler li {
+        display: none;
+    }
+
+    .selected-tab{
+        display: none;
+    }
+
+    .icon{
+        float: right;
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 25px;
+    }
+
+    form{
+        margin-left: 0 !important;
+    }
+
+    #content{
+        width: 100% !important;
+        margin-left: 10% !important;  
+        font-family: 'Myriad Pro';
+    }
+
+    #judul{
+        text-align: left !important;
+    }
+
+    form #name{
+        width: 50% !important;
+    }
+    form #email{
+        width: 50% !important;
+    }
+    form #password{
+        width: 50% !important;
+    }
+    form #choose{
+        width: 38.5% !important;
+    }
+    form #adress{
+        width: 50% !important;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .responsive{
+        position: relative;
+    }
+
+    .responsive li{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .responsive .icon{
+        position: absolute;
+    }
+
+    .toggler{
+        margin: 0;
+    }
+
+}
+
+#judul{
+    text-align: center;
+    font-size: 18pt;
+    font-family: Raleway-Light;
+}
+#content{
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Myriad Pro';
+}
+form{
+    width: 100%;
+    margin-left: 30%;    
+}
+form #name{
+    width: 36%;
+    padding: 5px;
+    margin-right: 2%
+}
+form #email{
+    width: 36%;
+    padding: 5px;
+    margin-right: 2%
+}
+form #password{
+    width: 36%;
+    padding: 5px;
+    margin-right: 2%
+}
+form #choose{
+    width: 38.5%;
+    padding: 5px;
+    margin-right: 2%
+}
+form #adress{
+    width: 36.5%;
+    padding: 10px;
+    margin-right: 2%;
+    font-family: 'Myriad Pro';
+}
+form li{
+    margin: 2%;
+    display: inline-block;
+}
+#btn-list{
+    margin-left: 6%;
+}
+#reset, #subButton{
+    font-size: 12pt;
+    padding: 1em 1.6em;
+    background-color: rgb(53, 51, 51);
+    color: white;
+    font-family: Raleway-Light;
+    border-radius: 10px;
+    border-style: none;
+}
+#reset:hover, #subButton:hover{
+    background-color: black;
+    cursor: pointer;
+}
+form #error{
+    text-align: center;
+    margin-right: 60%;
+    background-color: greenyellow;
+}
+form #error #errorMsg{
+    color: red;
+}
+

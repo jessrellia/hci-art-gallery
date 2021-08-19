@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/CSS" href="style-gallery.CSS">
+    <link rel="stylesheet" href="../Fonts/font-awesome/css/all.css">
+</head>
+<body>
+</body>
+    <div class="navigation">
+        <div id=logo><img src="asset/logo.png" alt="Logo"></div>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+        <nav>
+            <ul class="toggler">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li class="selected-tab">Gallery</li>
+                <li><a href="../Auction/auction.html">Auction</a></li>
+                <li><a href="../Registration/registration.html">Registration</a></li>
+                <li><a href="../About/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <div class="carrousel">
+            <div class=load></div>
+            <div class="carrousel-item">
+                <img src="asset/1.jpg">
+                <img src="asset/2.jpg">
+                <img src="asset/3.jpg">
+                <img src="asset/4.jpg">
+                <img src="asset/5.jpg">
+            </div>
+            <div id=title>
+                gallery
+            </div>
+        </div>
+    </header>
+    <div class=content>
+        <div class=content-item>
+            <img src="asset/squid-monks.jpg" alt="Squid by Alyssa Monks (2011)" id=img-1>
+            <p id=detail-1>
+                <strong>HYPERREALISM</strong><br>
+                <br>Squid<br>
+                by Monks, United States (2011)
+            </p>
+            <div class="modal" id="modal-1">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-squid-monks.jpg" alt="Squid by Alyssa Monks (2011)">
+                    <text class=art-title>Squid</text>
+                    <text class=artist>by Alyssa Monks</text>
+                    <text class=detail>
+                        Medium: Oil on canvas
+                        <br> Style: Hyperrealism 
+                        <br> United States, 2011
+                    </text>
+                    <text class=quote>
+                        I want to somehow express what it's like to be in their [the subject of her painting] skin. I believe this is what art can do at its best. Maybe this way we feel less alone in the world, more compassionate to each other, work with, instead of against, one another.
+                    </text>
+                    <text class=artist-name>Alyssa Monks</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/mountain-veil-how.jpg" alt="Mountain Veil II by Clifford How (2018)" id=img-2>
+            <p id=detail-2>
+                <strong>IMPRESSIONISM</strong><br>
+                <br>Mountain Veil II<br>
+                by How, Australia (2018)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-mountain-veil-how.png" alt="Mountain Veil II by Clifford How (2018)">
+                    <text class=art-title>Mountain Veil II</text>
+                    <text class=artist>by Clifford How</text>
+                    <text class=detail>
+                        Medium: Oil and wax on linen
+                        <br> Style: Abstraction
+                        <br> Australia, 2018
+                    </text>
+                    <text class=quote>
+                        If my work transports the viewer to these remote locations and installs a sense of awe, I feel I have succeeded as an artist.
+                    </text>
+                    <text class=artist-name>Clifford How</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/celestial-3-poole.jpg" alt="Celestial 3 by Walter Poole (2018)" id=img-3>
+            <p id=detail-3>
+                <strong>ABSTRACTION</strong><br>
+                <br>Celestial 3<br>
+                by Poole, United States (2018)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-celestial-poole.png">
+                    <text class=art-title>Celestial 3</text>
+                    <text class=artist>by Walter Poole</text>
+                    <text class=detail>
+                        Medium: Silver deposit on other
+                        <br> Style: Abstraction
+                        <br> United States, 2018
+                    </text>
+                    <text class=quote>
+                        My goal is to create positive sublime works that celebrate the good in humanity and contradict the hatred that is so prevalent today. Thus, the use of silver.
+                    </text>
+                    <text class=artist-name>Walter Poole</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/a-breath-of-summer-schweinsberg.jpg" alt="A Breath of Summer II by Daniela Schweinsberg (2019)" id=img-4>
+            <p id=detail-4>
+                <strong>ABSTRACTION</strong><br>
+                <br>A Breath of Summer II<br>
+                by Schweinsberg, Germany (2019)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-a-breath-of-summer-schweinsberg.png" alt="A Breath of Summer II by Daniela Schweinsberg (2019)">
+                    <text class=art-title>A Breath of Summer II</text>
+                    <text class=artist>by Daniela Schweinsberg</text>
+                    <text class=detail>
+                        Medium: Acrylic, mixed media on canvas
+                        <br> Style: Abstraction
+                        <br> Germany, 2018
+                    </text>
+                    <text class=quote>
+                        I consider nature to be a form of rest that offers balance in today's fast-paced everyday life and that runs through my works like a red thread. I question people's approach to nature and capture snapshots of their surroundings, which I transfer to canvas in abstract, dynamic, colorful lines and shapes.
+                    </text>
+                    <text class=artist-name>Daniela Schweinsberg</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/an-angel-escofet.jpg" alt="An Angel At My Table by Miriam Escofet (2018)" id=img-5>
+            <p id=detail-5>
+                <strong>HYPERREALISM</strong><br>
+                <br>An Angel At My Table<br>
+                by Escofet, England (2018)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-an-angel-escofet.png" alt="An Angel At My Table by Miriam Escofet (2018)">
+                    <text class=art-title>An Angel At My Table</text>
+                    <text class=artist>by Miriam Escofet</text>
+                    <text class=detail>
+                        Medium: Oil on linen
+                        <br> Style: Hyperrealism
+                        <br> England, 2018
+                    </text>
+                    <text class=quote>
+                        The portrait is of the my mother, who is an artist herself. My mother has a wonderful inner stillness and calm that I really wanted to convey in this work. She is at the centre of the pictorial space and the perspective of the tea crockery leads to a vanishing point contained within her.
+                    </text>
+                    <text class=artist-name>Miriam Escofet</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/valley-of-gold-muccillo.jpg" alt="Valley of Gold by Renato Muccillo (2020)" id=img-6>
+            <p id=detail-6>
+                <strong>CONTEMPORARY</strong><br>
+                <br>Valley of Gold<br>
+                by Muccillo, Canada (2020)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-valley-of-gold-muccillo.png" alt="Valley of Gold by Renato Muccillo (2020)">
+                    <text class=art-title>Valley of Gold</text>
+                    <text class=artist>by Renato Muccillo</text>
+                    <text class=detail>
+                        Medium: Oil on panel
+                        <br> Style: Contemporary
+                        <br> Canada, 2020
+                    </text>
+                    <text class=quote>
+                        My heart lies in the natural environment. I focus on the area where I live... and the experience of seeing what I see and being honest about it. I feel my best expressions are painted. I am continually driven to analyze and to try to understand the effects of light and atmosphere on color— then using my ability as an artist to decipher and record those effects.
+                    </text>
+                    <text class=artist-name>Renato Muccillo</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/juana-la-rosa.jpg" alt="Juana by Fabián La Rosa (2018)" id=img-7>
+            <p id=detail-7>
+                <strong>REALISM</strong><br>
+                <br>Juana<br>
+                by La Rosa, Argentina (2018)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-juana-la-rosa.png" alt="Juana by Fabián La Rosa (2018)">
+                    <text class=art-title>Juana</text>
+                    <text class=artist>by Fabián La Rosa</text>
+                    <text class=detail>
+                        Medium: Oil on canvas
+                        <br> Style: Realism
+                        <br> Argentina, 2018
+                    </text>
+                    <text class=quote>
+                        La Rosa’s minimal compositions are carefully arranged so as to thoughtfully study a particular, often unexpected, subject. With astute rendering, the moments depicted in his paintings maintain a quiet strength. He brings a painterly touch to his works that adds texture and subtle drama (Lexington, 2019).
+                    </text>
+                    <text class=artist-name>Fabian La Rosa</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/peonies-derevyanko.jpg" alt="Peonies by Nataly Derevyanko (2019)" id=img-8>
+            <p id=detail-8>
+                <strong>CONTEMPORARY</strong><br>
+                <br>Peonies<br>
+                by Derevyanko, Ukraine (2019)
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-peonies-derevyanko.png" alt="Peonies by Nataly Derevyanko (2019)">
+                    <text class=art-title>Peonies</text>
+                    <text class=artist>by Nataly Derevyanko</text>
+                    <text class=detail>
+                        Medium: Oil on canvas
+                        <br> Style: Contemporary
+                        <br> Ukraine, 2019
+                    </text>
+                    <text class=quote>
+                        I paint from my childhood always and everywhere. I am inspired by the surrounding world - children, people, animals, and nature. My love of painting makes new pictures. 
+                    </text>
+                    <text class=artist-name>Nataly Derevyanko</text>
+                </div>
+            </div>
+        </div>
+        <div class=content-item>
+            <img src="asset/berlin-windows-frank.jpg" alt="Berlin Windows #1 by Zoe Frank (2018)" id=img-9>
+            <p id=detail-9>
+                <strong>REALISM</strong><br>
+                <br>Berlin Windows #1<br>
+                by Frank, United States, 2018
+            </p>
+            <div class="modal" id=modal-1>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="asset/full-berlin-windows-frank.png" alt="Berlin Windows #1 by Zoe Frank (2018)">
+                    <text class=art-title>Berlin Windows #1</text>
+                    <text class=artist>by Zoe Frank</text>
+                    <text class=detail>
+                        Medium: Oil on linen on panel
+                        <br> Style: Realism
+                        <br> United States, 2018
+                    </text>
+                    <text class=quote>
+                        I had originally found still life to be a bit boring compared to the figure, but a couple years ago I realized that I could paint still lifes without setting up the composition first—rather by adding and removing elements, and it became much more alive for me and also helped me to focus more directly on pictorial concerns.
+                    </text>
+                    <text class=artist-name>Zoe Frank</text>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><h2>Fancy Art 2020. All Contents are Right Reserved</h2></div>
+    <script src="script-gallery.js"> </script>
+</html>

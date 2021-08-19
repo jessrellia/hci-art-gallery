@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>    
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../Fonts/font-awesome/css/all.css">
+    <link rel="stylesheet" href="style-registration.css"> 
+</head>
+<body>
+    <div class="navigation">
+        <div id=logo><img src="logo.png" alt="Logo"></div>
+        <a href="javascript:void(0);" class="icon"><i class="fa fa-bars"></i></a>
+        <nav>
+            <ul class="toggler">
+                <li><a href="../Home/home.html">Home</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li><a href="../Auction/auction.html">Auction</a></li>
+                <li class="selected-tab">Registration</li>
+                <li><a href="../About/about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br>
+    <div id="content">
+        <p id="judul">REGISTRATION</p><br>
+        <form action="" onsubmit="return validate()" method="POST">
+            <label for="">Fullname</label><br>
+            <input type="text" id="name" placeholder="Fullname"><br><br>
+            <label for="">Email</label><br>
+            <input type="text" id="email" placeholder="Email"><br><br>
+            <label for="">Password</label><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <label for="">Country</label><br>
+            <select id="choose">
+                <option value="" selected disabled hidden>Select</option>
+                <option value="AU">Australia</option>
+                <option value="AR">Argentina</option>
+                <option value="BE">Belgium</option>
+                <option value="BR">Brazil</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="HK">Hong Kong</option>
+                <option value="IN">India</option>
+                <option value="ID">Indonesia</option>
+                <option value="IT">Italy</option>
+                <option value="JP">Japan</option>
+                <option value="KR">Republic of Korea</option>
+                <option value="MO">Macao</option>
+                <option value="MY">Malaysia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="PH">Philippines</option>
+                <option value="SG">Singapore</option>
+                <option value="GB">United Kingdom</option>
+                <option value="US">United States</option>
+                <option value="VN">Vietnam</option>
+            </select><br><br>
+            <label for="">Address</label><br>
+            <textarea placeholder="Street" id="adress"></textarea><br><br>
+            <label for="">Art Preferences</label><br>
+            <ul>
+                <li>
+                    <input type="checkbox" value="realism" name="preferences">
+                    <label for="chk_box">Realism</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="painterly" name="preferences">
+                    <label for="chk_box">Painterly</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="abstraction" name="preferences">
+                    <label for="chk_box">Abstraction</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="checkbox" value="exp_fauv" name="preferences">
+                    <label for="chk_box">Expressionism and Fauvism</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="abstract" name="preferences">
+                    <label for="chk_box">Abstract</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input type="checkbox" value="photorealism" name="preferences">
+                    <label for="chk_box">Photorealism</label>
+                </li>
+                <li>
+                    <input type="checkbox" value="impression" name="preferences">
+                    <label for="chk_box">Impressionism</label>
+                </li>
+            </ul>
+            <br>
+            <div id="error">
+                <span id="errorMsg"></span>
+            </div>
+            <ul id="btn-list">
+                <li><input type="reset" value="Reset" onclick="return resetform()" id="reset"></li>
+                <li><input type="submit" value="Register" id="subButton"></li>
+            </ul>
+        </form>
+    </div>
+    <br><br>   
+    <div class="footer"><p>Fancy Art 2020. All Contents are Right Reserved</p></div>
+</body>
+<script src="script-registration.js"> </script>
+</html>

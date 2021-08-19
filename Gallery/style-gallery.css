@@ -1,0 +1,355 @@
+@font-face {
+    font-family: Geo Sans;
+    src: url(../Fonts/geosans/GeosansLight.ttf);
+}
+@font-face {
+    font-family: Barrington;
+    src: url(../Fonts/barrington/Barrington.ttf);
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../Fonts/raleway/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Myriad-Pro;
+    src: url(../Fonts/myriad-pro/MYRIADPRO-REGULAR.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo img{
+    position: absolute;
+    width: 4.5em;
+    margin-left: 10px;
+}
+
+.selected-tab{
+    background-color: #303434;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+}
+
+nav{
+    background-color: #eaf0ef;
+    width: 100%;
+    font-family: 'Myriad Pro';
+    overflow: auto;
+}
+
+.toggler{
+    margin-left: 100px;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+}
+
+li a:hover{
+    color: white;
+    background-color: #7cd5d5;
+}
+
+header{
+    margin-bottom: 2vw;
+}
+header .carrousel{
+    position: relative;
+    animation: slide 40s infinite;
+}
+header .carrousel-item{
+    width: 100%;
+    opacity: 0.6;
+    height: 20vw;
+    position: relative;
+}
+header .carrousel-item > *{
+    visibility: hidden;
+    position: absolute;
+    top:0;
+    left: 0;
+    animation: 12s autoplay infinite;
+    height: 20vw;
+    width: 100%;
+}
+header .carrousel-item > *:nth-child(1){
+    animation-delay: 0s;
+}
+header .carrousel-item > *:nth-child(2){
+    animation-delay: 4s;
+}
+header .carrousel-item > *:nth-child(3){
+    animation-delay: 8s;
+}
+header .carrousel-item > *:nth-child(4){
+    animation-delay: 12s;
+}
+header #title{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    color: white;
+    font-size: 5.5vw;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px darkgray;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vw;
+}
+.content-item img:nth-child(1){
+    width: 25vw;
+    height: 25vw;
+    display: block;
+}
+.content-item{
+    position: relative;
+    margin: 1vw 1vw;
+}
+.content-item p{
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 8vw;
+    width: 24vw;
+    font-size: 1.5vw;
+    font-family: Geo Sans;
+    padding: 1vw 0 0 1vw;
+    color: black;
+}
+
+
+
+.modal{
+    display: none; 
+    position: fixed;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    padding-top: 5vw;
+    width: 100%; 
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4); 
+    vertical-align: middle;
+}
+.close{
+    font-size: 28px;
+    font-weight: bold;
+    color: grey;
+    float: right;
+    margin: auto;
+}
+.close:hover{
+    color: black; 
+    cursor: pointer;
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+.modal-content img{
+    float: left;
+    width: 35%;
+}
+.modal-content text{
+    overflow: hidden;
+    position: absolute;
+    margin-left: auto;
+    padding-left: 15px;
+    font-family: Geo Sans;
+}
+.modal-content .art-title{
+    font-size: 3vw;
+    margin-right: auto;
+    font-weight: bolder;
+    color: rgb(99, 69, 43)
+}
+.modal-content .artist{
+    padding-top: 5vw;
+    color: rgba(122, 95, 72);
+    font-weight: bolder;
+    font-size: 1.8vw; 
+}
+.modal-content .detail{
+    padding-top: 7.5vw;
+    font-size: 1.5vw;
+    color: rgba(122, 95, 72);
+    font-weight: bolder;
+    line-height: 2vw;
+}
+.modal-content .quote{
+    padding-top: 14vw;
+    font-size: 1.5vw;
+    width: 50%;
+    line-height: 2vw;
+    height: 60%;
+    font-weight: bolder;
+    color:rgba(122, 95, 72);
+}
+.modal-content .artist-name{
+    font-family: Barrington;
+    color:rgb(99, 69, 43);
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.8vw;
+}
+
+.footer{
+    width: 100%;
+    background-color: #303434;
+    font-size: 16px;
+    font-family: Raleway-Light;
+    text-align: center;
+    color: white;
+    margin-top: 36px;
+}
+
+.footer h2{
+    padding: 20px 25px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.icon{
+    display: none;
+}
+
+.navigation{
+    background-color: #eaf0ef;
+    width: 100%;
+}
+
+@keyframes autoplay{
+    0%{
+        visibility: visible;
+    }
+    33.33%{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    header{
+        margin-bottom: 4vw;
+    }
+    .content{
+        flex-direction: column;
+        align-content: center;
+    }
+    .content-item img:nth-child(1){
+        width: 50vw;
+        height: 50vw;
+        display: block;
+    }
+    .modal{
+        padding-top: 30vw;
+    }
+    .modal-content .artist-name{
+        bottom: 30px;
+        right: 30px;
+        font-size: 2vw;
+    }
+    .content-item p{
+        width: 48vw;
+        height: 15vw;
+        font-size: 2.5vw;
+        padding: 2vw 0 0 2vw;
+    }
+    .toggler li {
+        display: none;
+    }
+    .selected-tab{
+        display: none;
+    }
+    .icon{
+        float: right;
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .responsive{
+        position: relative;
+    }
+
+    .responsive li{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .responsive .icon{
+        position: absolute;
+    }
+
+    .toggler{
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 501px){
+    .modal{
+        padding-top: 40vh;
+        overflow: auto;
+    }
+    .content-item img:nth-child(1){
+        width: 70vw;
+        height: 70vw;
+        display: block;
+        left: 50vh;
+    }
+    .content-item p{
+        width: 68vw;
+        height: 17vw;
+        font-size: 3vw;
+        padding: 2vw 0 0 2vw;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px){
+    .modal{
+        padding-top: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
+    .modal{
+        padding-top: 15vw;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
+    .modal{
+        padding-top: 8vw;
+    }
+}
+
+
+
